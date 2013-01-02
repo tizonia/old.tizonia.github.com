@@ -1,0 +1,110 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Tizonia OpenMAX IL &gt; About</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="OpenMAX IL,Khronos,multimedia,codecs,hardware acceleration,vp8,webm,mp3,decoder,open source" />
+    <meta name="description" content="Tizonia OpenMAX IL Official Website." />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="css/shThemeMidnight.css" type="text/css" />
+    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tizonia">View on GitHub</a>
+          <p id="language"><select>
+              <option value="en">English</option>
+              
+            </select>
+          </p>
+
+          <h1 id="project_title">Tizonia OpenMAX IL</h1>
+          <h2 id="project_tagline">An open source implementation of OpenMAX IL 1.2</h2>
+
+        </header>
+      </div>
+
+    <!-- 2nd HEADER -->
+
+    <div class="inner">
+       <div class="menu">
+        <ul>
+          <li><a href="index.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="download/index.html">Download</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="https://github.com/tizonia/tizonia-openmax-il/wiki">Wiki</a></li>
+        </ul>
+       </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        
+
+    <h3>About Tizonia OpenMAX IL</h3>
+    <p>Tizonia OpenMAX IL is an experimental implementation for Linux of the <a href="http://www.khronos.org/news/press/khronos-group-releases-openmax-il-1.2-provisional-specification">OpenMAX IL 1.2 provisional specification</a> from <a href="http://www.khronos.org/">The Khronos Group</a>.</p>
+    <p>Tizonia OpenMAX IL consists of a number of resources:</p>
+    <ul>
+      <li>A fairly complete implementation of a base OpenMAX IL component library (written in C)</li>
+      <li>An IL Core implementation (written in C)</li>
+      <li>An OS abstraction and utility library (written in C), including POSIX threading and synchronization primitives, FIFO and priority queues, dynamic array, config file parsing, uuids, small object allocation, etc</li>
+      <li>A Resource Management (RM) framework, including a C client library, and D-Bus-based RM server (written in C++)</li>
+      <li>A number of sample IL components, including an mp3 decoder (based on libmad), a vp8 decoder (based on libvpx), a SDL-based YUV renderer, etc.</li>
+    </ul>
+    <p>Tizonia OpenMAX IL is released under the <a href="http://www.gnu.org/licenses/lgpl-3.0.txt">GNU Lesser General Public License version 3</a> license.</p>
+
+
+    <h3>About Skema, Tizonia's test execution framework</h3>
+    <p>Skema is a <a href="http://www.python.org/">Python</a> test tool that allows the definition and execution of arbitrary OpenMAX IL graphs and use cases using an easy-to-program XML syntax. Skema internally uses <a href="http://docs.python.org/2/library/ctypes.html">Python's ctypes</a> to programatically load and use the OpenMAX IL Core. Skema can be easily extended to support new functionality and test scenarios by defining new XML tags also written in Python. </p>
+    <p>Skema borrows ideas and some of its code from Linaro's excellent <a href="http://lava-test.readthedocs.org/en/latest/">Lava-test</a> framework. </p>
+    <p>Skema is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License version 3</a> license.</p>
+
+
+    <h3>About Project</h3>
+    <div class="ohlohWidget"><script type="text/javascript" src="http://www.ohloh.net/p/623271/widgets/project_basic_stats.js"></script></div>
+    <div class="ohlohWidget"><script type="text/javascript" src="http://www.ohloh.net/p/623271/widgets/project_languages.js"></script></div>
+    <div class="clear"></div>
+
+    <h3>About Website</h3>
+    <p>This website is based on <a href="http://tortoisehg.org/">TortoiseHg</a>'s excellent website maintained by Steve Borho and Yuki Kodama. You can find the original source code at <a href="https://bitbucket.org/kuy/thg-web/">https://bitbucket.org/kuy/thg-web/</a> and this website's sources at <a href="https://bitbucket.org/tizonia/tizonia-web/">https://bitbucket.org/tizonia/tizonia-web/</a>. </p>
+    <p>This site also uses Alex Gorbatchev's <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a> JavaScript package to render most of the code snippets.</p>
+
+    <p>The source files of this website are licensed under the terms of the <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License version 2</a>.</p>
+    <p>SyntaxHighlighter is licensed under the terms of the <a href="http://mit-license.org/">MIT License</a> or the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License version 3</a>.</p>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="outer">
+      <footer class="inner">
+        <p>Copyright &copy; 2013 <a href="http://www.aratelia.com">Aratelia Limited</a> - <a href="http://www.juanrubio.me">Juan A. Rubio</a></p>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21817639-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -257,10 +257,10 @@ form {
   padding: 20px;
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-}
+/* img { */
+/*   width: 100%; */
+/*   max-width: 100%; */
+/* } */
 
 /*******************************************************************************
 Full-Width Styles
@@ -302,7 +302,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 50px 10px 0px 10px;
 }
 
 #project_title {
@@ -329,6 +329,15 @@ Full-Width Styles
   right: 0;
   height: 70px;
   background: url('../images/icon_download.png') no-repeat 0% 90%;
+}
+
+#language {
+  position: absolute;
+  width: 86px;
+  z-index: 0;
+  bottom: 25px;
+  right: 0;
+  height: 70px;
 }
 
 .zip_download_link {
@@ -372,6 +381,52 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
+}
+
+.menu ul li a,
+.menu ul li a:link,
+.menu ul li a:visited {
+    font-size: 120%;
+    font-weight:bold;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus {
+    font-size: 120%;
+    font-weight:bold;
+    text-shadow: #0090ff 0px 0px 2px;
+}
+
+.menu > div > div:first-child {
+    font-size: 80%;
+}
+
+.menu {
+    width: 100%;
+    height: 20px;
+}
+
+.menu ul {
+    display: block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.menu ul li {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    font-size: 120%;
+}
+
+.menu > div {
+    float: left;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.menu > div > div:first-child {
+    text-align: left;
 }
 
 
