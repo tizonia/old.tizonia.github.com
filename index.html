@@ -32,10 +32,10 @@
        <div class="menu">
         <ul>
           <li><a href="index.html">News</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="download/index.html">Download</a></li>
-          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="docs.html">Docs</a></li>
           <li><a href="https://github.com/tizonia/tizonia-openmax-il/wiki">Wiki</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
        </div>
     </div>
@@ -45,60 +45,46 @@
       <section id="main_content" class="inner">
         
 
+    <h3>News</h3>
+        <ul>
+          <li>2014-01-18: Spotify support is now available.</li>
+          <li>2013-04-10: Continuous integration available on <a href="https://travis-ci.org/tizonia/tizonia-openmax-il">https://travis-ci.org/tizonia/tizonia-openmax-il</a>.</li>
+          <li>2013-01-01: The Tizonia project launched. Git and Mercurial repos available on GitHub and Bitbucket.</li>
+        </ul>
+
 <h3>The Tizonia Project</h3>
 
 <ul>
   <li>A command-line music player and audio streaming client/server for Linux.</li>
   <li>With support for Spotify.</li>
-  <li>Also, a multimedia framework based on OpenMAX IL 1.2 provisional specification.</li>
+  <li>Also, a full multimedia framework based on OpenMAX IL 1.2 provisional specification.</li>
 </ul>
 
+<p></p>
 <p>The project consists of a number of resources.</p>
 
-<h4>A music player and audio streaming client/server: <code>tizonia</code></h4>
+<h5>tizonia: The music player and audio streaming client/server</h5>
 <ul>
-  <li>Command-line playback of audio formats from local media (formats: mp3, mp2, mpa, m2a, aac, ogg/vorbis, opus, wav, aiff, and flac).</li>
-  <li>Spotify client.</li>
-  <li>ICEcast/SHOUTcast audio streaming server (formats: mp3).</li>
-  <li>ICEcast/SHOUTcast audio streaming client (formats: mp3, aac, and opus, more to be added in the future).</li>
-  <li>Deamon and command line modes (no GUI).</li>
-  <li>MPRIS D-BUS v2 media player remote control interface (work-in-progress).</li>
-  <li>Based on Tizonia's own multimedia framework based on OpenMAX IL 1.2.</li>
+  <li>Command-line playback: mp3, mp2, mpa, m2a, aac, ogg/vorbis, opus, wav, aiff, and flac).</li>
+  <li>Spotify streaming service client.</li>
+  <li>Icecast/SHOUTcast audio streaming client (mp3, aac, and opus) and server (mp3).</li>
+  <li>Daemon and command line modes (no GUI). MPRIS D-BUS v2 media player remote control interface.</li>
+  <li>Based on Tizonia's own OpenMAX IL 1.2-based multimedia framework (i.e. no ffmpeg, libav, libvlc, or gstreamer required).</li>
 </ul>
 
-<h4>A multimedia framework based on OpenMAX IL 1.2</h4>
+<h5>A multimedia framework based on OpenMAX IL 1.2</h5>
 
-<p>Tizonia is also a complete implementation of the OpenMAX IL 1.2 provisional specification. No dependencies with gstreamer, libav, or ffmpeg or any other audio decoding/encoding/streaming.</p>
-
-<p>The framework comprises a number of libraries and programming resources:</p>
+<p>Comprising a number of libraries and programming resources:</p>
 
 <ol>
-  <li><code>libtizonia</code>: A C library for creating OpenMAX IL 1.2 plugins. Encoders, decoders, parsers, sinks, etc, for domains audio/video/other.</li>
+  <li><code>libtizonia</code>: A C library for creating OpenMAX IL 1.2 plugins; encoders, decoders, parsers, sinks, etc, for OpenMAX IL domains audio/video/other.</li>
   <li><code>libtizcore</code> A C library for discovery and dynamic loading of OpenMAX IL 1.2 plugins.</li>
   <li><code>libtizplatform'</code> A C library with wrappers and utilities for memory allocation, threading and synchronization primitives, evented I/O, FIFO and priority queues, dynamic arrays, associative arrays, small object allocation, config file parsing, HTTP parser, uuids, and more.</li>
   <li><code>tizrmd</code> A D-Bus-based OpenMAX IL Resource Manager daemon.</li>
   <li><code>libtizrmproxy</code> A C client library to communicate with the RM server.</li>
-  <li>Audio and video plugins</li>
+  <li>Audio and video plugins, including audio, video and general purpose components.</li>
+  <li><code>skema</code> A test execution framework for OpenMAX IL 1.2 components written in Python. <a href="https://github.com/tizonia/tizonia-openmax-il/wiki/Skema">Skema</a> allows the definition and execution of arbitrary OpenMAX IL graphs and test cases using an easy-to-write XML syntax.</li>
 </ol>
-
-<h4>Skema: A test execution framework for OpenMAX IL 1.2 components</h4>
-<ul>
-  <li> <code>skema</code> is test execution framework written in Python. <a href="https://github.com/tizonia/tizonia-openmax-il/wiki/Skema">Skema</a> allows the definition and execution of arbitrary OpenMAX IL graphs and test cases using an easy-to-write XML syntax.</li>
-</ul>
-
-<p></p>
-
-    <h3>News</h3>
-        <ul>
-          <li>2014-01-18: Spotify support now available.</li>
-          <li>2013-04-10: Continuous integration available on <a href="https://travis-ci.org/tizonia/tizonia-openmax-il">https://travis-ci.org/tizonia/tizonia-openmax-il</a>.</li>
-          <li>2013-01-01: The Tizonia project launched. Git and Mercurial repos available on GitHub and Bitbucket.</li>
-        </ul>
-
-    <h3>Platforms</h3>
-    <ul>
-        <li>Linux (i686 and x86_64).</li>
-    </ul>
 
 
       </section>
@@ -107,7 +93,7 @@
     <!-- FOOTER  -->
     <div class="outer">
       <footer class="inner">
-        <p>Copyright &copy; 2015 <a href="http://www.aratelia.com">Aratelia Limited</a> - <a href="http://www.juanrubio.me">Juan A. Rubio</a></p>
+        <p>Copyright &copy; 2015 <a href="http://www.juanrubio.me">Juan A. Rubio</a></p>
       </footer>
     </div>
 
