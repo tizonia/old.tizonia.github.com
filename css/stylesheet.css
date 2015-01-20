@@ -204,7 +204,7 @@ ul, ol, dl {
 }
 
 ul li {
-  list-style: inside;
+  list-style: square inside none;
   padding-left: 20px;
 }
 

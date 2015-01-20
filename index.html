@@ -47,39 +47,37 @@
 
     <h3>News</h3>
         <ul>
-          <li>2014-01-18: Spotify support is now available.</li>
-          <li>2013-04-10: Continuous integration available on <a href="https://travis-ci.org/tizonia/tizonia-openmax-il">https://travis-ci.org/tizonia/tizonia-openmax-il</a>.</li>
-          <li>2013-01-01: The Tizonia project launched. Git and Mercurial repos available on GitHub and Bitbucket.</li>
+          <li>2014-01-18: Added Spotify support.</li>
+          <li>2013-04-10: Continuous integration available:
+            <ul> <li><a href=\"https://travis-ci.org/tizonia/tizonia-openmax-il\">https://travis-ci.org/tizonia/tizonia-openmax-il</a>.</li></ul>
+          </li>
+          <li>2013-01-01: The Tizonia project launched. Git and Mercurial repos available from GitHub and Bitbucket.</li>
         </ul>
 
 <h3>The Tizonia Project</h3>
 
 <ul>
-  <li>A command-line music player and audio streaming client/server for Linux.</li>
-  <li>With support for Spotify.</li>
+  <li>A command-line Spotify client, music player and audio streaming client/server for Linux.</li>
   <li>Also, a full multimedia framework based on OpenMAX IL 1.2 provisional specification.</li>
 </ul>
 
-<p></p>
-<p>The project consists of a number of resources.</p>
+<h3>Resources</h3>
 
-<h5>tizonia: The music player and audio streaming client/server</h5>
+<h4><code>tizonia</code>: a command-line music player and streaming client/server</h4>
 <ul>
-  <li>Command-line playback: mp3, mp2, mpa, m2a, aac, ogg/vorbis, opus, wav, aiff, and flac).</li>
+  <li>Playback from local media: mp3, mp2, mpa, m2a, aac, ogg/vorbis, opus, wav, aiff, and flac).</li>
   <li>Spotify streaming service client.</li>
-  <li>Icecast/SHOUTcast audio streaming client (mp3, aac, and opus) and server (mp3).</li>
-  <li>Daemon and command line modes (no GUI). MPRIS D-BUS v2 media player remote control interface.</li>
+  <li>Icecast/SHOUTcast streaming client (mp3, aac, and opus) and server (mp3).</li>
+  <li>Daemon and command line modes (no GUI). MPRIS D-BUS v2 remote control interface.</li>
   <li>Based on Tizonia's own OpenMAX IL 1.2-based multimedia framework (i.e. no ffmpeg, libav, libvlc, or gstreamer required).</li>
 </ul>
 
-<h5>A multimedia framework based on OpenMAX IL 1.2</h5>
-
-<p>Comprising a number of libraries and programming resources:</p>
+<h4>An OpenMAX IL 1.2 multimedia framework</h4>
 
 <ol>
   <li><code>libtizonia</code>: A C library for creating OpenMAX IL 1.2 plugins; encoders, decoders, parsers, sinks, etc, for OpenMAX IL domains audio/video/other.</li>
   <li><code>libtizcore</code> A C library for discovery and dynamic loading of OpenMAX IL 1.2 plugins.</li>
-  <li><code>libtizplatform'</code> A C library with wrappers and utilities for memory allocation, threading and synchronization primitives, evented I/O, FIFO and priority queues, dynamic arrays, associative arrays, small object allocation, config file parsing, HTTP parser, uuids, and more.</li>
+  <li><code>libtizplatform</code> A C library with wrappers and utilities for memory allocation, threading and synchronization primitives, evented I/O, FIFO and priority queues, dynamic arrays, associative arrays, small object allocation, config file parsing, HTTP parser, uuids, and more.</li>
   <li><code>tizrmd</code> A D-Bus-based OpenMAX IL Resource Manager daemon.</li>
   <li><code>libtizrmproxy</code> A C client library to communicate with the RM server.</li>
   <li>Audio and video plugins, including audio, video and general purpose components.</li>
