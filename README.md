@@ -1,4 +1,6 @@
 tizonia.github.com
 ==================
 
-Tizonia Website
+Tizonias's (first) Website
+
+NOTE: Not in use anymore.
